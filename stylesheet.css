@@ -1,0 +1,22 @@
+/* World Clock Panel */
+
+/*
+ * System clock hover is drawn on an inner .clock child (border: 3px), while the
+ * outer .clock-display button has border: none.  Our button carries the hover
+ * directly with border: 3px, which makes the pill 1 px shorter on each side.
+ * Reducing vertical border to 2 px compensates.
+ */
+#panel .panel-button.world-clock-indicator {
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+.world-clock-panel-box {
+    padding: 0;
+    spacing: 0;
+}
+
+.world-clock-panel-col {
+    min-height: 0;
+    spacing: 1px;
+}

@@ -1,0 +1,5 @@
+# GNOME GSettings compiled schemas
+**/gschemas.compiled
+
+# Environment metadata and editor settings
+*.swp

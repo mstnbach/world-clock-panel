@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.world-clock-panel"
+          path="/org/gnome/shell/extensions/world-clock-panel/">
+
+    <key name="clock-list" type="as">
+      <default>[]</default>
+      <summary>List of world clocks (timezone|label entries)</summary>
+    </key>
+
+    <!-- Font -->
+    <key name="font-size" type="i">
+      <default>13</default>
+      <range min="8" max="48"/>
+    </key>
+    <key name="font-size-source" type="s">
+      <default>'system'</default>
+      <summary>'system' or 'custom'</summary>
+    </key>
+    <key name="bold-time" type="b">
+      <default>false</default>
+    </key>
+
+    <!-- Opacity -->
+    <key name="opacity" type="i">
+      <default>100</default>
+      <range min="10" max="100"/>
+    </key>
+
+    <!-- Label -->
+    <key name="show-label" type="b">
+      <default>true</default>
+    </key>
+    <key name="label-type" type="s">
+      <default>'city'</default>
+      <summary>'city' | 'abbreviation' | 'abbrev-city' | 'tz-long' | 'tz-full' | 'custom'</summary>
+    </key>
+    <key name="label-position" type="s">
+      <default>'top'</default>
+      <summary>'top' | 'bottom' | 'left' | 'right'</summary>
+    </key>
+
+    <!-- Separator between clocks -->
+    <key name="separator" type="s">
+      <default>'·'</default>
+    </key>
+
+    <!-- Gaps -->
+    <key name="gap-mode" type="s">
+      <default>'uniform'</default>
+      <summary>'uniform' (one value) or 'split' (before + between)</summary>
+    </key>
+    <key name="gap-uniform" type="i">
+      <default>10</default>
+      <range min="-20" max="80"/>
+      <summary>Uniform gap between all clock elements (px)</summary>
+    </key>
+    <key name="gap-before" type="i">
+      <default>14</default>
+      <range min="-20" max="80"/>
+      <summary>Gap between system clock and world clocks (px)</summary>
+    </key>
+    <key name="gap-between" type="i">
+      <default>8</default>
+      <range min="0" max="80"/>
+      <summary>Gap between world clock entries (px)</summary>
+    </key>
+
+    <!-- Panel position -->
+    <key name="panel-box" type="s">
+      <default>'center'</default>
+      <summary>'center' | 'right' | 'left'</summary>
+    </key>
+
+    <!-- Time/date format -->
+    <key name="time-format" type="s">
+      <default>'%H:%M'</default>
+    </key>
+    <key name="show-seconds" type="b">
+      <default>false</default>
+    </key>
+    <key name="show-date" type="b">
+      <default>false</default>
+    </key>
+    <key name="date-format" type="s">
+      <default>'%d/%m'</default>
+    </key>
+
+  </schema>
+</schemalist>

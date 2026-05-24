@@ -1,0 +1,9 @@
+{
+  "name": "World Clock Panel",
+  "description": "Display unlimited world clocks to the right of the system clock. Supports custom labels, font size, opacity, time/date formats.",
+  "uuid": "world-clock-panel@dihareb",
+  "version": 1,
+  "shell-version": ["50"],
+  "settings-schema": "org.gnome.shell.extensions.world-clock-panel",
+  "url": ""
+}
